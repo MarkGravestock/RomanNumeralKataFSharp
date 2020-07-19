@@ -1,11 +1,11 @@
 module MarkGravestock.RomanNumeralKata.Tests
 
+open System
 open Xunit
 
 let ArabicToRoman(arabic) = match arabic with
-                            | 1 -> "I"
-                            | 9 -> "IX"
-                            | _ -> "III"
+                            | arabic when arabic < 9 -> new String('I', arabic)
+                            | _ -> "IX"
 
 [<Fact>]
 let ``When the number 1 is entered then it returns the numeral I`` () =
@@ -18,3 +18,8 @@ let ``When the number 3 is entered then it returns the numeral III`` () =
 [<Fact>]
 let ``When the number 9 is entered then it returns the numeral IX`` () =
     Assert.Equal(ArabicToRoman(9), "IX")
+    
+[<Theory>]
+[<InlineData(2, "II")>]
+let ``The number is converted into  a numeral`` (number, numeral) =
+    Assert.Equal(ArabicToRoman(number), numeral)
