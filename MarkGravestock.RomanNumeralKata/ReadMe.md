@@ -7,4 +7,4 @@ and some other material on it, so decided to give it a go before reading his not
 
 ### Notes
 
-- Try to use more functional approach (see https://fsharpforfunandprofit.com/learning-fsharp/). Use pattern matching rather than for/if-else
+- Try to use more [functional approach](https://fsharpforfunandprofit.com/learning-fsharp/#dos-and-donts). Use pattern matching rather than for/if-else
