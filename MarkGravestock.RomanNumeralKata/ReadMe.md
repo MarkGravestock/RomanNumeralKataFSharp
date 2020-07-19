@@ -8,3 +8,10 @@ and some other material on it, so decided to give it a go before reading his not
 ### Notes
 
 - Try to use more [functional approach](https://fsharpforfunandprofit.com/learning-fsharp/#dos-and-donts). Use pattern matching rather than for/if-else
+
+### Things to consider
+
+- Triangulation
+- Specific/Generic
+- [TPP] (https://en.wikipedia.org/wiki/Transformation_Priority_Premise)
+- Watch this http://programmingtour.blogspot.com.au/2012/12/roman-numerals-kata-with-commentary.html ?
