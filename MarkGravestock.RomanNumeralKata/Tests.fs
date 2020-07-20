@@ -11,10 +11,12 @@ let rec ArabicToRomanPart arabic roman =
     | arabic when arabic < 10 -> ArabicToRomanPart (arabic - 9) (roman + "IX")
     | arabic when arabic < 40 -> ArabicToRomanPart (arabic - 10) (roman + "X")
     | arabic when arabic < 50 -> ArabicToRomanPart (arabic - 40) (roman + "XL")
-    | arabic when arabic < 100 -> ArabicToRomanPart (arabic - 50) (roman + "L")
+    | arabic when arabic < 90 -> ArabicToRomanPart (arabic - 50) (roman + "L")
+    | arabic when arabic < 100 -> ArabicToRomanPart (arabic - 90) (roman + "XC")
     | arabic when arabic < 400 -> ArabicToRomanPart (arabic - 100) (roman + "C")
     | arabic when arabic < 500 -> ArabicToRomanPart (arabic - 400) (roman + "CD")
-    | arabic when arabic < 1000 -> ArabicToRomanPart (arabic - 500) (roman + "D")
+    | arabic when arabic < 900 -> ArabicToRomanPart (arabic - 500) (roman + "D")
+    | arabic when arabic < 1000 -> ArabicToRomanPart (arabic - 900) (roman + "CM")
     | _ -> ArabicToRomanPart (arabic - 1000) (roman + "M")
 
 let ArabicToRoman arabic = ArabicToRomanPart arabic ""
@@ -36,10 +38,12 @@ let ArabicToRoman arabic = ArabicToRomanPart arabic ""
 [<InlineData(40, "XL")>]
 [<InlineData(44, "XLIV")>]
 [<InlineData(51, "LI")>]
+[<InlineData(90, "XC")>]
 [<InlineData(375, "CCCLXXV")>]
 [<InlineData(400, "CD")>]
 [<InlineData(825, "DCCCXXV")>]
 [<InlineData(1066, "MLXVI")>]
+[<InlineData(1989, "MCMLXXXIX")>]
 
 let ``The number is converted into  a numeral`` (number, numeral) =
     Assert.Equal(numeral, ArabicToRoman(number))
