@@ -25,6 +25,7 @@ let ArabicToRoman arabic = ArabicToRomanPart arabic ""
 [<InlineData(9, "IX")>]
 [<InlineData(10, "X")>]
 [<InlineData(12, "XII")>]
+[<InlineData(14, "XIV")>]
 
 let ``The number is converted into  a numeral`` (number, numeral) =
     Assert.Equal(ArabicToRoman(number), numeral)
