@@ -1,11 +1,11 @@
 module MarkGravestock.RomanNumeralKata.Tests
 
-open System
 open Xunit
 
 let rec ArabicToRomanPart arabic roman =
     match arabic with
-    | arabic when arabic < 4 -> roman + String('I', arabic)
+    | arabic when arabic = 0 -> roman
+    | arabic when arabic < 4 -> ArabicToRomanPart (arabic - 1) (roman + "I")
     | arabic when arabic = 4 -> roman + "IV"
     | arabic when arabic < 9 -> ArabicToRomanPart (arabic - 5) (roman + "V")
     | arabic when arabic = 9 -> roman + "IX"
