@@ -6,9 +6,7 @@ open Xunit
 let ArabicToRoman(arabic) = match arabic with
                             | arabic when arabic < 4 -> String('I', arabic)
                             | arabic when arabic = 4 -> "IV"
-                            | arabic when arabic = 5 -> "V"
-                            | arabic when arabic = 6 -> "VI"
-                            | arabic when arabic < 9 -> "VII"
+                            | arabic when arabic < 9 -> "V" + String('I', arabic - 5) // Duplication between 1st match && this 
                             | _ -> "IX"
 
 [<Theory>]
