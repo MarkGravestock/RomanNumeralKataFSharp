@@ -8,6 +8,8 @@ and some other material on it, so decided to give it a go before reading his not
 ### Notes
 
 - Try to use more [functional approach](https://fsharpforfunandprofit.com/learning-fsharp/#dos-and-donts). Use pattern matching rather than for/if-else (idiomatic?)
+- Ended up with a single recursive function, but there is duplication in the explicit pattern matches. Not sure if there is an elegant way to switch this out, with out switching to a recursive
+function without a pattern match.
 
 ### Things to consider
 
