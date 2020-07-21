@@ -5,12 +5,12 @@
 
         <IsPackable>false</IsPackable>
         <GenerateProgramFile>false</GenerateProgramFile>
+        <OutputType>Library</OutputType>
     </PropertyGroup>
 
     <ItemGroup>
-        <Compile Include="Tests.fs" />
-        <Compile Include="Program.fs" />
         <Content Include="ReadMe.md" />
+        <Compile Include="RomanNumeralKata.fs" />
     </ItemGroup>
 
     <ItemGroup>
