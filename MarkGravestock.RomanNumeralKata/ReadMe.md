@@ -29,3 +29,8 @@ that understanding the domain should be considered as a valid part of the Kata a
 ### Things to consider
 
 - Triangulation and [TPP](https://en.wikipedia.org/wiki/Transformation_Priority_Premise) as ways to move in small steps from the Specific to Generic 
+
+### Other Things to look at
+
+- Review [Recursive types and folds](https://swlaschin.gitbooks.io/fsharpforfunandprofit/content/series/recursive-types-and-folds.html) this may give pointers to removing duplication from matching.
+- Try out property based tests against my solution

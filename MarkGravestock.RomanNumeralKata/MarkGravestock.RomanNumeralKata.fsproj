@@ -11,6 +11,7 @@
     <ItemGroup>
         <Content Include="ReadMe.md" />
         <Compile Include="RomanNumeralKata.fs" />
+        <Compile Include="PropertyTests.fs" />
     </ItemGroup>
 
     <ItemGroup>

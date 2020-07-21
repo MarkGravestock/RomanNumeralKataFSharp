@@ -2,6 +2,7 @@ module MarkGravestock.RomanNumeralKata.Tests
 
 open Xunit
 
+// Name of function??
 let rec ArabicToRomanPart arabic roman =
     match arabic with
     | arabic when arabic = 0 -> roman
@@ -22,6 +23,7 @@ let rec ArabicToRomanPart arabic roman =
 let ArabicToRoman arabic = ArabicToRomanPart arabic ""
 
 [<Theory>]
+[<InlineData(0, "")>]
 [<InlineData(1, "I")>]
 [<InlineData(2, "II")>]
 [<InlineData(3, "III")>]
