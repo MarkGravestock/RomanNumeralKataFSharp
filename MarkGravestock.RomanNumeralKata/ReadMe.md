@@ -1,4 +1,6 @@
-﻿### Roman Numeral Kata - F#
+[![.NET](https://github.com/MarkGravestock/RomanNumeralKataFSharp/actions/workflows/dotnet.yml/badge.svg)](https://github.com/MarkGravestock/RomanNumeralKataFSharp/actions/workflows/dotnet.yml)
+
+### Roman Numeral Kata - F#
 
 This is my attempt at the [Roman Numeral Kata](https://agilekatas.co.uk/katas/romannumerals-kata). I've done this before in C# (using Fixie as the test framework!).
 
